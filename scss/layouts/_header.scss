@@ -1,0 +1,32 @@
+header {
+    .top-header {
+        background-color: $general-color;
+        padding: 10px 20px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .left-link {
+            a {
+                font-size: 14px;
+                margin-right: 10px;
+                font-family: $general-font;
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+        .social-media{
+            a{
+                margin-right: 10px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+}
+
