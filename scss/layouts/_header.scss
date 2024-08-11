@@ -3,27 +3,61 @@ header {
         background-color: $general-color;
         padding: 10px 20px;
         color: white;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include d-flex;
+
         .left-link {
             a {
                 font-size: 14px;
                 margin-right: 10px;
                 font-family: $general-font;
+
                 &:last-child {
                     margin-right: 0;
+                }
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .social-media {
+            a {
+                margin-right: 10px;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+    .navigation-bar{
+        padding: 10px 20px;
+        @include d-flex($gap: 50px);
+        ul{
+            flex: 1;
+            li{
+                margin-right: 30px;
+                @include font($transform: uppercase, $family: $heading-font , $weight: 500);
+                a{
+                    i{
+                        font-size: 12px;
+                        color: $primary-color;
+                    }
                 }
                 &:hover{
                     color: $primary-color;
                 }
             }
         }
-        .social-media{
-            a{
-                margin-right: 10px;
-                &:last-child{
-                    margin-right: 0px;
+        .right-btn{
+            @include d-flex($gap: 30px);
+            button{
+                background-color: transparent;
+                border: none;
+                font-size: 18px;
+                &:hover{
+                    color: $primary-color;
                 }
             }
         }

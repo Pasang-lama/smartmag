@@ -17,6 +17,38 @@ ul li {
   display: inline-block;
 }
 
+img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container {
+  width: 1320px;
+  margin: 0px auto;
+}
+
+.margin-top {
+  margin-top: 80px;
+}
+
+.section-heading {
+  font-family: "Saira", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #E82D85;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.grid-col-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
 header .top-header {
   background-color: #000000;
   padding: 10px 20px;
@@ -24,6 +56,8 @@ header .top-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+  flex-direction: row;
 }
 header .top-header .left-link a {
   font-size: 14px;
@@ -41,4 +75,244 @@ header .top-header .social-media a {
 }
 header .top-header .social-media a:last-child {
   margin-right: 0px;
+}
+header .navigation-bar {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  flex-direction: row;
+}
+header .navigation-bar ul {
+  flex: 1;
+}
+header .navigation-bar ul li {
+  margin-right: 30px;
+  font-family: "Saira", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+header .navigation-bar ul li a i {
+  font-size: 12px;
+  color: #E82D85;
+}
+header .navigation-bar ul li:hover {
+  color: #E82D85;
+}
+header .navigation-bar .right-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-direction: row;
+}
+header .navigation-bar .right-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+}
+header .navigation-bar .right-btn button:hover {
+  color: #E82D85;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 1px;
+}
+.banner .banner-items {
+  position: relative;
+}
+.banner .banner-items:first-child {
+  grid-row: 1/3;
+}
+.banner .banner-items .card-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  gap: 5px;
+  flex-direction: column;
+}
+.banner .banner-items .card-details .category {
+  background-color: #E82D85;
+  padding: 2px 10px;
+  border-radius: 1px;
+  font-family: "Saira", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.banner .banner-items .card-details .card-title {
+  font-family: "Saira", sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  color: white;
+  text-transform: none;
+  line-height: 44px;
+}
+.banner .banner-items .card-details .author-date {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(192, 192, 192);
+  text-transform: none;
+  line-height: 24px;
+}
+
+.trending-card img {
+  height: 250px;
+}
+.trending-card img:hover {
+  opacity: 0.9;
+}
+.trending-card .card-title {
+  font-family: "Saira", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: none;
+  line-height: 29px;
+  margin: 10px 0px;
+}
+.trending-card .card-title:hover {
+  color: #E82D85;
+}
+.trending-card time {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #8a8a8a;
+  text-transform: none;
+  line-height: 20px;
+}
+
+.editor-picks {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+.editor-picks .news-list ul li {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid rgb(174, 174, 174);
+}
+.editor-picks .news-list ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.news-list-card {
+  display: flex;
+  gap: 20px;
+}
+.news-list-card img {
+  width: 250px;
+  height: 160px;
+}
+.news-list-card .news-details .category {
+  font-family: "Saira", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #E82D85;
+  text-transform: uppercase;
+  line-height: 20px;
+}
+.news-list-card .news-details .news-title {
+  font-family: "Saira", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: none;
+  line-height: 29px;
+  margin: 10px 0px;
+}
+.news-list-card .news-details .author-details {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8a8a8a;
+  text-transform: none;
+  line-height: 20px;
+}
+.news-list-card .news-details .author-details span {
+  color: #000000;
+}
+.news-list-card .news-details .author-details i {
+  margin-left: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 20px;
+}
+
+.CES-section .grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+.CES-section .grid-wrapper .card-items {
+  position: relative;
+  grid-column: 1/4;
+  border-radius: 10px;
+  height: 550px;
+}
+.CES-section .grid-wrapper .card-items .card-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  color: white;
+  padding: 30px;
+  display: flex;
+  justify-content: end;
+  align-items: flex-start;
+  gap: 5px;
+  flex-direction: column;
+}
+.CES-section .grid-wrapper .card-items .card-details .category {
+  background-color: #E82D85;
+  padding: 2px 10px;
+  border-radius: 1px;
+  font-family: "Saira", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.CES-section .grid-wrapper .card-items .card-details .card-title {
+  font-family: "Saira", sans-serif;
+  font-size: 33px;
+  font-weight: 600;
+  color: white;
+  text-transform: none;
+  line-height: 44px;
+}
+.CES-section .grid-wrapper .card-items .card-details .author-date {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(192, 192, 192);
+  text-transform: none;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */

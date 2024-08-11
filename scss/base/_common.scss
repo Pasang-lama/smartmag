@@ -13,3 +13,27 @@ ul{
         display: inline-block;
     }
 }
+
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.container{
+    width: 1320px;
+    margin: 0px auto;
+}
+.margin-top{
+    margin-top: 80px;
+}
+.section-heading{
+    @include font($size: 30px, $family:$heading-font, $weight:600, $color:$primary-color , $transform:uppercase);
+    margin-bottom: 40px;
+}
+.grid-col-3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
